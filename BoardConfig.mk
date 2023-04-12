@@ -19,13 +19,15 @@
 # product configuration (apps).
 #
 
+# Prebuilts
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+
 # Inherit from OEM SoC-common
 -include $(COMMON_PATH)/BoardConfigCommon.mk
 
 # Prebuilts
-# TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-# BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-# TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
