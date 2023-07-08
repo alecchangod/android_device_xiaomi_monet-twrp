@@ -18,6 +18,7 @@
 #
 FDEVICE="monet"
 #set -o xtrace
+export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
