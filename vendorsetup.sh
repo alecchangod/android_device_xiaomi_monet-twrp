@@ -16,6 +16,8 @@
 #
 #       Please maintain this if you use this script or any part of it
 #
+git clone https://github.com/alecchangod/android_device_xiaomi_sm8250-common-twrp --depth=1 device/xiaomi/sm8250-common
+git clone https://github.com/TeamWin/proprietary_vendor_xiaomi --depth=1 vendor/xiaomi
 FDEVICE="monet"
 #set -o xtrace
 export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
