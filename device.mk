@@ -20,7 +20,7 @@
 # product configuration (apps).
 #
 
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from OEM SOC-common
 $(call inherit-product, $(COMMON_PATH)/common.mk)
